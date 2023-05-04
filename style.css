@@ -1,48 +1,55 @@
-*{
-   margin: 0%;
-   padding: 0%;
-   font-family:Verdana, Geneva, Tahoma, sans-serif
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.bulletin{
-   display: flex;
-   flex-direction: column;
-   width: 60%;
-   margin: 2rem auto;
-   border: 1px solid black;
-   border-radius: 1rem;
+.bulletin {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 2rem auto;
+    border: 1px solid black;
+    border-radius: 1rem;
 }
 
-h1{
-   text-align: center;
-   padding: 2rem;
+h1 {
+    text-align: center;
+    padding: 2rem;
 }
 
 #messages {
-   padding: 10px;
-   margin: 1rem;
+    padding: 10px;
+    margin: 1rem;
 }
 
-form{
-width: 60%;
-   margin: auto;
+#messages div {
+    display: flex;
+    padding: 0.2rem;
+}
+#messages div:last-child strong{
+    color: rgb(0, 42, 255);
+}
+form {
+    width: 60%;
+    margin: auto;
 }
 
-#sendMsg{
-   display: flex;
-   width: 100%;
-   justify-content: space-between;
+#sendMsg {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
-#msgTxt{
-   border: 1px solid black;
-   border-radius: 1rem;
-   padding: 1rem;
-   margin-right: 1rem;
-   width: 80%;
+#msgTxt {
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    width: 80%;
 }
 
-#msgBtn{
-   width: 20%;
-   border-radius: 1rem;
+#msgBtn {
+    width: 20%;
+    border-radius: 1rem;
 }
