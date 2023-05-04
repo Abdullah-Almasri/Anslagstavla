@@ -40,11 +40,11 @@ document.getElementById("msgBtn").addEventListener("click", sendMsg);
 
 onChildAdded(ref(database, "messages"), (data) => {
    if (data.val().sender == sender) {
-
-      messages.innerHTML += "<div id=" + data.key + ">you : " + data.val().msg + "</div><div>";
-      upstream / main
+      //messages.innerHTML += "<div id=" + data.key + ">you : " + data.val().msg + "</div><div>";
+      messages.innerHTML += "<div id=" + data.key + "> <strong>you "  + "</strong> <p>: " + data.val().msg + "</p></div></div>";
+    //  upstream / main
    } else {
-      messages.innerHTML += "<div id=" + data.key + ">" + data.val().sender + " : " + data.val().msg + "</div></div>";
+      messages.innerHTML += "<div id=" + data.key + "> <strong> " + data.val().sender + "</strong> <p>: " + data.val().msg + "</p></div></div>";
    }
 });
 
